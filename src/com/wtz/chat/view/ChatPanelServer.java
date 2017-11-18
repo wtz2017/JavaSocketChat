@@ -17,7 +17,6 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-import com.wtz.chat.MyJTextArea;
 import com.wtz.chat.control.ServerHandler;
 import com.wtz.chat.model.IMessageReceive;
 import com.wtz.chat.model.IResultListener;

@@ -1,4 +1,4 @@
-package com.wtz.chat;
+package com.wtz.chat.view;
 
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
