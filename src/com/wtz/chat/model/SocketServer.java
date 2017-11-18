@@ -71,6 +71,9 @@ public class SocketServer {
     }
 
     private void beginListen() {
+        if (mSever == null) {
+            return;
+        }
         try {
             System.out.println("beginListen...mSever.accept");
             final Socket clientSocket = mSever.accept();
