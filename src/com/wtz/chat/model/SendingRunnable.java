@@ -36,7 +36,7 @@ public class SendingRunnable implements Runnable {
         try {
             PrintWriter out = new PrintWriter(
                     new BufferedWriter(
-                            new OutputStreamWriter(mSocket.getOutputStream())), true);
+                            new OutputStreamWriter(mSocket.getOutputStream(), "UTF-8")), true);
             out.println(msg);
             out.flush();
         } catch (UnknownHostException e) {

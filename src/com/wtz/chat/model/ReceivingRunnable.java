@@ -25,7 +25,7 @@ public class ReceivingRunnable implements Runnable {
 
         BufferedReader input;
         try {
-            input = new BufferedReader(new InputStreamReader(mSocket.getInputStream()));
+            input = new BufferedReader(new InputStreamReader(mSocket.getInputStream(), "UTF-8"));
             while (!Thread.currentThread().isInterrupted() && !mSocket.isClosed()) {
 
                 String messageStr = null;
